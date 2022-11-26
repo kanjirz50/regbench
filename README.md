@@ -1,4 +1,4 @@
-# rebench
+# regbench
 
 A tiny regular expression benchmark tool.
 
