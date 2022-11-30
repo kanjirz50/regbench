@@ -37,8 +37,9 @@ def rebench(
         elapsed_sec += end_perf_counter - start_perf_counter
     print("")
 
-    if benchmark_method is re.finditer and matched:
-        matched = [m for m in matched][0]
+    if benchmark_method is re.finditer:
+        matched = [m for m in matched]
+        matched = matched[0] if len(matched) else matched
 
     return {
         'times': number_of_trials,
